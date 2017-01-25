@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 5.7.17, for Linux (x86_64)
+--
+-- Host: dev.tnxlabs.com    Database: devTest
+-- ------------------------------------------------------
+-- Server version	5.5.51
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `location_data`
+--
+
+DROP TABLE IF EXISTS `location_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `location_data` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `location_address` varchar(45) NOT NULL,
+  `location_lat` float NOT NULL,
+  `location_lon` float NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `location_data`
+--
+
+LOCK TABLES `location_data` WRITE;
+/*!40000 ALTER TABLE `location_data` DISABLE KEYS */;
+INSERT INTO `location_data` VALUES (1,'Mulshi Dam ',18.5307,73.5112,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(2,'Lohagad',18.7102,73.4759,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(3,'Parvati Hill',18.4969,73.8467,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(4,'Vetal Hill',18.5255,73.8154,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(5,'Osho Garden Pune',18.5359,73.8907,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(6,'Khadakwasla Dam',18.4423,73.7671,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(7,'Bund Garden',18.5421,73.8816,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(8,'Okayama Friendship Garden',18.4914,73.8368,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(9,'Empress Garden',18.5126,73.8985,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(10,'Pune Juncation',18.5289,73.8744,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(12,'Pimpri Chinchwad',18.6298,73.7997,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(13,'Chakan',18.7603,73.863,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(14,'Talegaon',18.7392,73.6831,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(15,'Lavasa',18.4097,73.5066,'0000-00-00 00:00:00','0000-00-00 00:00:00'),(16,'Lonikand',18.6287,74.033,'0000-00-00 00:00:00','0000-00-00 00:00:00');
+/*!40000 ALTER TABLE `location_data` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-01-25 13:24:25
